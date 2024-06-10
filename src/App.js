@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import NavBar from './NavBar';
+import PageContent from './PageContent';
+import { ThemeProvider } from './contexts/ThemeContext';
+import Form from './Form';
+import { LanguageProvider } from './contexts/LanguageContext';
+import CounterHooks from './playingWithHooks/CounterHooks';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export default function App() {
+    return (
+      <LanguageProvider>
+        <ThemeProvider>
+          <PageContent>
+            <NavBar />
+            <br />
+            <div >
+              Testing (no lang changes should show here)
+            </div>
+            <br />
+            <Form />
+            <CounterHooks />
+          </PageContent>
+        </ThemeProvider>
+      </LanguageProvider>
+    );
+  }
 
-export default App;
