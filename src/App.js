@@ -15,7 +15,7 @@ export default function App() {
             <NavBar />
             <br />
             <div >
-              Testing (no lang changes should show here)
+              Testing (no language changes should show here)
             </div>
             <br />
             <Form />
