@@ -6,23 +6,25 @@ import { ThemeProvider } from './contexts/ThemeContext';
 import Form from './Form';
 import { LanguageProvider } from './contexts/LanguageContext';
 import CounterHooks from './playingWithHooks/CounterHooks';
+import Toggler from './playingWithHooks/Toggler';
 
 export default function App() {
-    return (
-      <LanguageProvider>
-        <ThemeProvider>
-          <PageContent>
-            <NavBar />
-            <br />
-            <div >
-              Testing (no language changes should show here)
-            </div>
-            <br />
-            <Form />
-            <CounterHooks />
-          </PageContent>
-        </ThemeProvider>
-      </LanguageProvider>
-    );
-  }
+  return (
+    <LanguageProvider>
+      <ThemeProvider>
+        <PageContent>
+          <NavBar />
+          <br />
+          <div >
+            Testing (no language changes should show near this text)
+          </div>
+          <br />
+          <CounterHooks />
+          <Toggler />
+          <Form />
+        </PageContent>
+      </ThemeProvider>
+    </LanguageProvider>
+  );
+}
 
