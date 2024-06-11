@@ -9,6 +9,7 @@ import CounterHooks from './playingWithHooks/CounterHooks';
 import Toggler from './playingWithHooks/Toggler';
 import SimpleFormInputHooks from './playingWithHooks/SimpleFormInputHook';
 import Clicker from './playingWithHooks/Clicker';
+import Swapi from './playingWithHooks/Swapi';
 
 export default function App() {
   return (
@@ -22,6 +23,8 @@ export default function App() {
           </div>
           <br />
           <Clicker />
+          <br />
+          <Swapi />
           <SimpleFormInputHooks />
           <CounterHooks />
           <Toggler />
