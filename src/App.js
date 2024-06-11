@@ -8,6 +8,7 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import CounterHooks from './playingWithHooks/CounterHooks';
 import Toggler from './playingWithHooks/Toggler';
 import SimpleFormInputHooks from './playingWithHooks/SimpleFormInputHook';
+import Clicker from './playingWithHooks/Clicker';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
             Testing (no language changes should show near this text)
           </div>
           <br />
+          <Clicker />
           <SimpleFormInputHooks />
           <CounterHooks />
           <Toggler />
