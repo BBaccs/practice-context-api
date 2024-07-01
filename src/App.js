@@ -10,6 +10,7 @@ import Toggler from './playingWithHooks/Toggler';
 import SimpleFormInputHooks from './playingWithHooks/SimpleFormInputHook';
 import Clicker from './playingWithHooks/Clicker';
 import Swapi from './playingWithHooks/Swapi';
+import PlayingWithUseReducer from './playingWithHooks/PlayingWithUseReducer';
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
           <CounterHooks />
           <Toggler />
           <Form />
+          <PlayingWithUseReducer />
         </PageContent>
       </ThemeProvider>
     </LanguageProvider>
